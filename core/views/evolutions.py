@@ -1,5 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
-from core.models.evolutions import Evolutions
+from core.models.evolution import Evolutions
 from core.serializers.evolutions import EvolutionModelSerializer
 
 

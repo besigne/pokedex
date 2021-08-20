@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from core.models.abilities import Abilities
+from core.models.ability import Abilities
 
 
 class AbilitiesModelSerializer(serializers.ModelSerializer):

@@ -1,5 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
-from core.models.pokemons import Pokemons
+from core.models.pokemon import Pokemons
 from core.serializers.pokemons import PokemonsModelSerializer
 
 

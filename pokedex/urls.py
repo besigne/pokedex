@@ -8,6 +8,5 @@ router = routers.SimpleRouter()
 router.register(r'pokemons', PokemonsModelViewSet, basename='pokemon')
 router.register(r'abilities', AbilitiesModelViewSet, basename='ability')
 router.register(r'evolutions', EvolutionsModelViewSet, basename='evolution')
-
 urlpatterns = [
 ] + router.urls

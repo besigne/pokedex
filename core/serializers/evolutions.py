@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from core.models.evolutions import Evolutions
+from core.models.evolution import Evolutions
 
 
 class EvolutionModelSerializer(serializers.ModelSerializer):
