@@ -1,7 +1,7 @@
 from rest_framework import routers
-from core.views.pokemons import PokemonsModelViewSet
-from core.views.abilities import AbilitiesModelViewSet
-from core.views.evolutions import EvolutionsModelViewSet
+from core.view.pokemon_view import PokemonsModelViewSet
+from core.view.ability_view import AbilitiesModelViewSet
+from core.view.evolution_view import EvolutionsModelViewSet
 from django.urls import path
 
 router = routers.SimpleRouter()

@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from core.models.evolution import Evolutions
+from core.model.evolution import Evolution
 
 
 class EvolutionModelSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Evolutions
+        model = Evolution
         fields = "__all__"

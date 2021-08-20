@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Abilities',
+            name='Abilitiy',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=50)),
@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name='Evolutions',
+            name='Evolution',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=50)),
@@ -32,8 +32,8 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=50)),
                 ('type', models.CharField(max_length=30)),
-                ('abilities', models.ManyToManyField(to='core.Abilities')),
-                ('evolution', models.ManyToManyField(to='core.Evolutions')),
+                ('abilities', models.ManyToManyField(to='core.Abilitiy')),
+                ('evolution', models.ManyToManyField(to='core.Evolution')),
             ],
         ),
     ]
