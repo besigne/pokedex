@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Abilitiy(models.Model):
+class Ability(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()
 

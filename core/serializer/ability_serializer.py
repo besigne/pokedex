@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from core.model.ability import Abilitiy
+from core.model.ability import Ability
 
 
 class AbilityModelSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Abilitiy
+        model = Ability
         fields = "__all__"

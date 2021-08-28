@@ -8,3 +8,6 @@ class PokemonModelSerializer(serializers.ModelSerializer):
         model = Pokemon
         fields = "__all__"
 
+    def update(self, instance, validated_data):
+        return True
+        # code here
